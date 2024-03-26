@@ -11,7 +11,7 @@
 
         override fun start(primaryStage: Stage) {
             textField = TextField()
-            textField.promptText = "Digite o nome da lista de compras"
+            textField.promptText = "Digite do item que deseja"
 
             val confirmarButton = Button("Confirmar")
             confirmarButton.setOnAction { criarLista() }
@@ -23,16 +23,16 @@
             layout.padding = Insets(20.0)
             layout.children.addAll(textField, confirmarButton, cancelarButton)
 
-            val scene = Scene(layout, 300.0, 200.0)
+            val scene = Scene(layout, 480.0, 360.0)
 
-            primaryStage.title = "Minha Interface Gráfica"
+            primaryStage.title = "Interface Gráfica"
             primaryStage.scene = scene
             primaryStage.show()
         }
 
         private fun criarLista() {
             val nomeLista = textField.text
-            println("Lista criada com o nome: $nomeLista")
+            println("Lista com o nome: $nomeLista")
         }
 
         private fun limparCampo() {
