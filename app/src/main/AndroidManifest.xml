@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.melhorpreco"
+        android:theme="@style/Theme.MelhorPreco"
         tools:targetApi="31">
 
         <activity
