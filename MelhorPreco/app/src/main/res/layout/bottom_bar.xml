@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/paleGreen"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/btn_home"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
+        app:layout_constraintLeft_toLeftOf="@id/bottom_bar"
+        app:layout_constraintRight_toRightOf="@id/bottom_bar"
+        app:layout_constraintTop_toTopOf="@id/bottom_bar"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="300dp"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <ImageButton android:id="@+id/btn_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/btn_profile"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
+        app:layout_constraintLeft_toLeftOf="@id/bottom_bar"
+        app:layout_constraintRight_toRightOf="@id/bottom_bar"
+        app:layout_constraintTop_toTopOf="@id/bottom_bar"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="300dp"
+        android:src="@mipmap/ic_launcher_round"
+        />
+    <ImageButton android:id="@+id/btn_settings"
+        android:contentDescription="@string/btn_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_bar"
+        app:layout_constraintLeft_toLeftOf="@id/bottom_bar"
+        app:layout_constraintRight_toRightOf="@id/bottom_bar"
+        app:layout_constraintTop_toTopOf="@id/bottom_bar"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="600dp"
+        android:layout_marginEnd="350dp"
+        android:src="@mipmap/ic_launcher_round"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
