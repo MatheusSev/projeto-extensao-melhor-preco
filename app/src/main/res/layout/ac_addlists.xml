@@ -9,15 +9,51 @@
 
 
     <FrameLayout
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="778dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addlists"
+        android:background="@color/bright_grey">
+
+        <Button
+            android:id="@+id/Cash_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp"
+            android:text="Cash_btn" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Home_btn" />
+    </FrameLayout>
+
+    <FrameLayout
         android:layout_width="411dp"
         android:layout_height="622dp"
         android:background="#FFFFFF"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="151dp">
 
+        <Button
+            android:id="@+id/Add_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|end"
+            android:layout_marginLeft="150dp"
+            android:text="Add_List" />
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="34dp"
+            android:baselineAligned="false" />
+
     </FrameLayout>
 
     <FrameLayout
