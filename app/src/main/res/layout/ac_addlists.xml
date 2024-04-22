@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/paleGreen"
+    android:id="@+id/addlists">
+
+
+    <FrameLayout
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="778dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addlists"
+        android:background="@color/bright_grey">
+
+        <Button
+            android:id="@+id/Cash_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp"
+            android:text="Cash_btn" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Home_btn" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="411dp"
+        android:layout_height="622dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="151dp">
+
+        <Button
+            android:id="@+id/Add_List"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|end"
+            android:layout_marginLeft="150dp"
+            android:text="Add_List" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:baselineAligned="false" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Button"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="48dp"
+            android:background="@color/blue_danube"/>
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            android:inputType="text|textFilter"
+            android:padding="10dp"
+            android:text="@string/pesquisar" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

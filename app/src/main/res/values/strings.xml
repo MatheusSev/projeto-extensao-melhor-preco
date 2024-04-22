@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MelhorPreco</string>
+    <string name="btn_home">btn_home</string>
+    <string name="btn_profile">btn_profile</string>
+    <string name="btn_settings">btn_settings</string>
+    <string name="pesquisar">Pesquisar...</string>
+</resources>
